@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
-import './App.scss';
+import './App.css';
 
 class Todo extends Component {
 
-  deleteTodo = (id) => {
+  deleteTodo = id => {
     this.props.removeTodo(id)
   }
-  render() {
 
+  render() {
     return (
       <div className="App">
         {this.props.value}
-        <button onClick={() => this.deleteTodo(this.props.id)}> X</button>
+
+        <button className="deleteButton" onClick={() => this.deleteTodo(this.props.id)}> X</button>
       </div>
     )
   }

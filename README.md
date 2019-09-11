@@ -1,7 +1,8 @@
 
-#Todo-List React Application
+# Todo-List React Application
 
-- Mainly build to learn react app and proptypes.
+- Simple Todo list build with react.
+- User can add and remove item.
 
 To run the server type `yarn start`.
 To build the production type `yarn build`.

@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from 'react';
-import './App.scss';
+import React, { Component } from 'react';
+import './App.css';
 import Todo from './Todo';
 
 let todoCounter = 1;
@@ -39,33 +39,40 @@ class App extends Component {
 
   render() {
     return (
-      <Fragment>
-        <h2 className="App">Add Todo Item</h2>
-        <div className="App">
+      <div className="App">
+
+        <h2>Add Todo Item</h2>
+
+        <div>
           <input
+            className="inputItem"
             type="text"
             value={this.state.item}
             onChange={this.handleInputChange}
           />
         </div>
-        <div className="App">
-          <button type="submit" onClick={this.handleSubmit}>
+
+        <div>
+          <br />
+          <button className="addButton" type="submit" onClick={this.handleSubmit}>
             Add
           </button>
         </div>
-        <div className="App">
-          <h3 className="App">Lists</h3>
-          <ul className="App">
+
+        <div>
+          <h3>Lists</h3>
+          <div>
             {this.state.list.map(item => {
               return (
-                <li key={item.id} className="App">
+                <li key={item.id}>
                   <Todo {...item} removeTodo={this.handleRemove} />
                 </li>
               )
             })}
-          </ul>
+          </div>
         </div>
-      </Fragment >
+
+      </div>
     );
   }
 }

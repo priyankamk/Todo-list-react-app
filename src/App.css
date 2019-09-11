@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.addButton {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(140, 235, 109);
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.deleteButton {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(238, 82, 82);
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.inputItem {
+  font-size: 30px;
+  border-radius: 20px;
+  border-color: orange;
+}
+
+li {
+  list-style-type: none;
+}
